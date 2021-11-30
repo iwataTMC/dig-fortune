@@ -60,6 +60,10 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func homeButton(_ sender: Any) {
+        answerLabel.text = "Today is ...??"
+        answerImageView.image = UIImage(named: "omikuji")
+    }
     
     
 }

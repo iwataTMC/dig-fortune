@@ -40,18 +40,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO0-gr-vAK">
+                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="w98-kJ-GBp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="HOME"/>
+                                <connections>
+                                    <action selector="homeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFp-hD-zdB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1SZ-BJ-UeR" secondAttribute="bottom" id="504-r1-g4h"/>
                             <constraint firstItem="1SZ-BJ-UeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6L4-XR-PrD"/>
                             <constraint firstItem="Guw-74-Lnj" firstAttribute="top" secondItem="8c4-hP-Ke8" secondAttribute="bottom" id="770-LA-l3y"/>
                             <constraint firstItem="1SZ-BJ-UeR" firstAttribute="top" secondItem="Guw-74-Lnj" secondAttribute="bottom" id="JUH-gj-y8y"/>
+                            <constraint firstItem="PO0-gr-vAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LdN-ha-r4Z"/>
                             <constraint firstItem="8c4-hP-Ke8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vv0-a7-5bJ"/>
+                            <constraint firstItem="PO0-gr-vAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ziq-OX-rCp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Guw-74-Lnj" secondAttribute="trailing" id="b6O-9u-zcx"/>
                             <constraint firstItem="8c4-hP-Ke8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fuC-pC-Qv6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8c4-hP-Ke8" secondAttribute="trailing" id="hmM-t5-aSz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PO0-gr-vAK" secondAttribute="trailing" constant="20" id="ofA-8S-P83"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1SZ-BJ-UeR" secondAttribute="trailing" id="roK-C7-l7S"/>
                             <constraint firstItem="Guw-74-Lnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zhz-zW-3zS"/>
                         </constraints>
@@ -67,9 +81,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
