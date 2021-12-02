@@ -29,5 +29,12 @@ class fortuneTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testMySample() {
+        let mySample = MySample()
+        let add = mySample.add(a: 2, b: 3)
+        // addメソッドの返り値が5であるかの判断
+        XCTAssertEqual(add, 5)
+    }
 
 }

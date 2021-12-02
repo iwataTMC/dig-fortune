@@ -16,6 +16,9 @@
 		2AA91CB72754AECE003961BD /* fortuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA91CB62754AECE003961BD /* fortuneTests.swift */; };
 		2AA91CC12754AECE003961BD /* fortuneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA91CC02754AECE003961BD /* fortuneUITests.swift */; };
 		2AA91CC32754AECE003961BD /* fortuneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA91CC22754AECE003961BD /* fortuneUITestsLaunchTests.swift */; };
+		2AE434CD2755E18D0047AA47 /* MySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE434CC2755E18D0047AA47 /* MySample.swift */; };
+		2AE434CE2755E18D0047AA47 /* MySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE434CC2755E18D0047AA47 /* MySample.swift */; };
+		2AE434CF2755E18D0047AA47 /* MySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE434CC2755E18D0047AA47 /* MySample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		2AA91CBC2754AECE003961BD /* fortuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA91CC02754AECE003961BD /* fortuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneUITests.swift; sourceTree = "<group>"; };
 		2AA91CC22754AECE003961BD /* fortuneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AE434CC2755E18D0047AA47 /* MySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2AA91C9F2754AECC003961BD /* AppDelegate.swift */,
+				2AE434CC2755E18D0047AA47 /* MySample.swift */,
 				2AA91CA12754AECC003961BD /* SceneDelegate.swift */,
 				2AA91CA32754AECC003961BD /* ViewController.swift */,
 				2AA91CA52754AECC003961BD /* Main.storyboard */,
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA91CA42754AECC003961BD /* ViewController.swift in Sources */,
+				2AE434CD2755E18D0047AA47 /* MySample.swift in Sources */,
 				2AA91CA02754AECC003961BD /* AppDelegate.swift in Sources */,
 				2AA91CA22754AECC003961BD /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA91CB72754AECE003961BD /* fortuneTests.swift in Sources */,
+				2AE434CE2755E18D0047AA47 /* MySample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE434CF2755E18D0047AA47 /* MySample.swift in Sources */,
 				2AA91CC32754AECE003961BD /* fortuneUITestsLaunchTests.swift in Sources */,
 				2AA91CC12754AECE003961BD /* fortuneUITests.swift in Sources */,
 			);
@@ -351,6 +359,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -412,6 +421,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
