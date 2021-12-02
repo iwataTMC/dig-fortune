@@ -10,15 +10,34 @@ import Foundation
 
 class ViewController: UIViewController {
 
+
+    
+    @IBOutlet weak var answerImageView: UIImageView!
+    
+    var animator: UIViewPropertyAnimator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         answerLabel.text = "Today is ...??"
         answerImageView.image = UIImage(named: "omikuji")
+        
+        
+        
+        animator = UIViewPropertyAnimator(duration:1.0,curve: .easeInOut){
+            self.answerImageView.center.y += 500
+            self.answerImageView.center.x += 500
+        }
+
+        animator.startAnimation()
+        
+        
+        
+        
     }
 
-    @IBOutlet weak var answerImageView: UIImageView!
+   
     
     
     
@@ -73,6 +92,7 @@ class ViewController: UIViewController {
         //    print(messageNumber)
 
             let urlString = "https://api.adviceslip.com/advice/\(messageNumber)"
+            
 
             guard let url = URL(string: urlString) else { return }
         //    print(url)
@@ -151,6 +171,13 @@ class ViewController: UIViewController {
     @IBAction func homeButton(_ sender: Any) {
         answerLabel.text = "Today is ...??"
         answerImageView.image = UIImage(named: "omikuji")
+        
+        animator = UIViewPropertyAnimator(duration:1.0,curve: .easeInOut){
+            self.answerImageView.center.y += 500
+            self.answerImageView.center.x += 500
+        }
+
+        animator.startAnimation()
     }
     
     
